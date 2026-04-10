@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : led5.py
+# Fungsi      : Menukar status LED secara toggle menggunakan satu butang pada setiap tekanan.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : 2 LED onboard (GP0, GP1), 1 butang onboard/luaran
+# Pin Diguna  : GP0 = LED utama toggle, GP1 = LED tambahan diinisialisasi tetapi tidak digunakan dalam logik, GP20 = butang input (pull-up)
+# Tahap       : Asas
+# Nota        : Menggunakan debounce ringkas melalui time.sleep(0.05). GP1 diinisialisasi tetapi tidak digunakan.
+# =========================================================
+
 import board
 import digitalio
 import time

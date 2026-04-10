@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : us1.py
+# Fungsi      : Mengelipkan LED pada GP5 secara berterusan.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : LED onboard/Grove LED
+# Pin Diguna  : GP5 = LED output
+# Tahap       : Asas
+# Nota        : Nama fail mencadangkan ultrasonic, tetapi kandungan sebenar fail ini hanyalah contoh LED blink.
+# =========================================================
+
 # --- 1. PREPARATION (Persediaan Library) ---
 import board
 import digitalio

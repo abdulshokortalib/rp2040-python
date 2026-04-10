@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : motor5.py
+# Fungsi      : Menukar status motor ON/OFF secara toggle menggunakan satu butang.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Motor DC pada saluran M1, 1 butang onboard/luaran
+# Pin Diguna  : GP8 = M1A, GP9 = M1B, GP20 = butang input (pull-up)
+# Tahap       : Sederhana
+# Nota        : Memerlukan library adafruit_motor. Menggunakan debounce ringkas 0.2 saat dan throttle 0.6 apabila motor ON.
+# =========================================================
+
 # code.py (CircuitPython) - Modul 5: Toggle motor ON/OFF (GP20)
 import time
 import board

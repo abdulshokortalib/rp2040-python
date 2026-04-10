@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : motor4.py
+# Fungsi      : Mengawal motor secara momentary dengan butang; motor bergerak hanya semasa butang ditekan.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Motor DC pada saluran M1, 1 butang onboard/luaran
+# Pin Diguna  : GP8 = M1A, GP9 = M1B, GP20 = butang input (pull-up)
+# Tahap       : Sederhana
+# Nota        : Memerlukan library adafruit_motor. Sesuai untuk demonstrasi kawalan asas motor menggunakan input digital.
+# =========================================================
+
 # code.py (CircuitPython) - Modul 4: Button momentary (GP20)
 import time
 import board

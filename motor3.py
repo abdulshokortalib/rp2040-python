@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : motor3.py
+# Fungsi      : Meningkatkan kelajuan motor secara berperingkat (ramp speed) kemudian memberhentikannya.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Motor DC pada saluran M1, driver motor onboard
+# Pin Diguna  : GP8 = M1A, GP9 = M1B
+# Tahap       : Sederhana
+# Nota        : Memerlukan library adafruit_motor. Menggunakan senarai throttle [0.2, 0.4, 0.6, 0.8, 1.0].
+# =========================================================
+
 # code.py (CircuitPython) - Modul 3: Ramp speed (PWM)
 import time
 import board

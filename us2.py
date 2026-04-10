@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : us2.py
+# Fungsi      : Membaca jarak menggunakan sensor ultrasonik dan memaparkan bacaan pada LCD I2C.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Sensor ultrasonik 3-pin (SIG), Grove LCD 16x2 JHD1802 I2C
+# Pin Diguna  : GP1 = SIG ultrasonik, GP3 = SCL, GP2 = SDA, alamat I2C = 0x3E
+# Tahap       : Sederhana
+# Nota        : Menggunakan pulseio, digitalio dan busio. Elakkan konflik pin dengan I2C; fail ini memang mengasingkan ultrasonik pada GP1.
+# =========================================================
+
 # Maker Pi RP2040
 # Grove 1  -> Ultrasonic Ranger (SIG pada GP1)  <-- tukar jika perlu
 # Grove 2  -> Grove LCD 16x2 (JHD1802) I2C: SDA=GP2, SCL=GP3

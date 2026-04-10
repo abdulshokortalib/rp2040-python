@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : motor2.py
+# Fungsi      : Menguji motor DC dengan pergerakan hadapan, berhenti, undur, kemudian berhenti semula.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Motor DC pada saluran M1, driver motor onboard
+# Pin Diguna  : GP8 = M1A, GP9 = M1B
+# Tahap       : Asas
+# Nota        : Memerlukan library adafruit_motor. Nilai throttle 0.5 untuk hadapan dan -0.5 untuk undur.
+# =========================================================
+
 # code.py (CircuitPython) - Modul 2: Forward & Reverse
 import time
 import board

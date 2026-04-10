@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : us4.py
+# Fungsi      : Membaca jarak ultrasonik, memaparkan nilai pada LCD, dan melaras kelajuan motor secara automatik.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Sensor ultrasonik 3-pin (SIG), Grove LCD 16x2 JHD1802 I2C, motor DC pada saluran M1
+# Pin Diguna  : GP1 = SIG ultrasonik, GP3 = SCL, GP2 = SDA, GP8 = M1A, GP9 = M1B, alamat I2C = 0x3E
+# Tahap       : Lanjutan
+# Nota        : Memerlukan library adafruit_motor. Menggabungkan sensor, LCD dan motor dalam satu sistem kawalan asas.
+# =========================================================
+
 import time
 import board
 import digitalio

@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : motor1.py
+# Fungsi      : Menggerakkan motor DC ke arah hadapan selama 2 saat kemudian berhenti.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Motor DC pada saluran M1, driver motor onboard
+# Pin Diguna  : GP8 = M1A, GP9 = M1B
+# Tahap       : Asas
+# Nota        : Memerlukan library adafruit_motor. Kod mengekalkan program hidup dengan gelung while True selepas motor berhenti.
+# =========================================================
+
 # code.py (CircuitPython) - Modul 1: Forward 2s kemudian berhenti
 import time
 import board

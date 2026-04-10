@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : siren.py
+# Fungsi      : Menghasilkan bunyi siren dengan menukar frekuensi buzzer antara nada rendah dan tinggi secara berterusan.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Buzzer onboard
+# Pin Diguna  : GP22 = buzzer PWM
+# Tahap       : Asas
+# Nota        : Menggunakan PWMOut dengan variable_frequency=True supaya frekuensi boleh diubah semasa loop.
+# =========================================================
+
 # --- 1. PREPARATION ---
 import board, pwmio, time
 

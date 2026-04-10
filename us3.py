@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : us3.py
+# Fungsi      : Mengawal kelajuan motor berdasarkan jarak sensor ultrasonik.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Sensor ultrasonik 3-pin (SIG), motor DC pada saluran M1
+# Pin Diguna  : GP1 = SIG ultrasonik, GP8 = M1A, GP9 = M1B
+# Tahap       : Sederhana
+# Nota        : Memerlukan library adafruit_motor. Jika sensor timeout, motor dihentikan sebagai langkah selamat.
+# =========================================================
+
 import time
 import board
 import digitalio

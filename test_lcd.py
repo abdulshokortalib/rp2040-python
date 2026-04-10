@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : test_lcd.py
+# Fungsi      : Menguji paparan Grove LCD 16x2 JHD1802 melalui I2C dengan memaparkan dua baris teks.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Grove LCD 16x2 JHD1802 I2C
+# Pin Diguna  : GP3 = SCL, GP2 = SDA, alamat I2C = 0x3E
+# Tahap       : Sederhana
+# Nota        : Menggunakan busio.I2C. Pastikan wiring LCD sepadan dengan pin ini; jika LCD tidak berfungsi, semak alamat dan sambungan.
+# =========================================================
+
 # Maker Pi RP2040 + Grove 16x2 LCD (JHD1802) I2C Tester
 # Wiring (ikut halaman anda):
 #   SDA = GP2, SCL = GP3
