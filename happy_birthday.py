@@ -6,14 +6,14 @@
 # Komponen    : Buzzer onboard / passive buzzer
 # Pin Diguna  : Buzzer: GP22
 # Tahap       : Sederhana
-# Nota        : Komen asal menyebut GP2 tetapi kod sebenar menggunakan GP22. Menggunakan variable_frequency=True untuk not muzik.
+# Nota        : 
 # =========================================================
 
 import time
 import board
 import pwmio
 
-# Passive buzzer pada GP2
+# Passive buzzer pada GP22
 piezo = pwmio.PWMOut(board.GP22, duty_cycle=0, frequency=440, variable_frequency=True)
 
 # Define musical notes (frequencies in Hz)
