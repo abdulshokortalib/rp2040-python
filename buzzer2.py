@@ -4,9 +4,9 @@
 # Papan       : Maker Pi RP2040
 # Bahasa      : CircuitPython
 # Komponen    : Buzzer onboard, LED digital
-# Pin Diguna  : Buzzer: GP22; LED: GP0
+# Pin Diguna  : Buzzer: GP22; LED: GP1
 # Tahap       : Asas
-# Nota        : Komen asal menyebut GP18 tetapi kod sebenar menggunakan GP22 untuk buzzer.
+# Nota        : 
 # =========================================================
 
 import board
@@ -14,10 +14,10 @@ import pwmio
 import time
 import digitalio
 
-led = digitalio.DigitalInOut(board.GP0)
+led = digitalio.DigitalInOut(board.GP1)
 led.direction = digitalio.Direction.OUTPUT
 
-# Setup buzzer pada GP18
+# Setup buzzer pada GP22
 buzzer = pwmio.PWMOut(board.GP22, variable_frequency=True)
 
 for i in range(2):
