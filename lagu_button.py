@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : lagu_button.py
+# Fungsi      : Pemain muzik dua lagu menggunakan dua butang, buzzer dan NeoPixel.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Buzzer onboard, 2 push button, NeoPixel onboard
+# Pin Diguna  : Butang Doraemon: GP20; Butang Happy Birthday: GP21; Buzzer: GP22; NeoPixel: GP18
+# Tahap       : Lanjutan
+# Nota        : Memerlukan modul neopixel_write. Menggabungkan dua set data melodi dalam satu program interaktif.
+# =========================================================
+
 import board
 import time
 import pwmio

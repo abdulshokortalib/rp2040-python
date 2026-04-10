@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : led1.py
+# Fungsi      : Menghidup dan memadam satu LED secara berkelip.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : LED digital
+# Pin Diguna  : LED: GP0
+# Tahap       : Asas
+# Nota        : Kod menggunakan while True. Baris komentar akhir “Write your code here :-)” boleh dibuang untuk kemasan.
+# =========================================================
+
 import board
 import digitalio
 import time

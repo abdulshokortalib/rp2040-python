@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : buzzer_continue.py
+# Fungsi      : Membunyikan buzzer secara berterusan dengan sela masa tetap.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Buzzer onboard
+# Pin Diguna  : Buzzer: GP22
+# Tahap       : Asas
+# Nota        : Kod menggunakan while True, jadi bunyi akan berulang tanpa henti sehingga papan dihentikan.
+# =========================================================
+
 import board
 import pwmio
 import time

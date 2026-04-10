@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : ambulan.py
+# Fungsi      : Sistem amaran ambulans menggunakan LCD I2C, buzzer, butang dan Grove LED.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : LCD Grove JHD1802 I2C, buzzer onboard, push button, Grove LED
+# Pin Diguna  : LCD: SCL=GP3, SDA=GP2, addr=0x3E; Buzzer: GP22; Butang: GP20; LED: GP5
+# Tahap       : Sederhana
+# Nota        : Memerlukan library standard CircuitPython: board, busio, time, pwmio, digitalio. LCD menggunakan I2C alamat 0x3E.
+# =========================================================
+
 import board
 import busio
 import time

@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : lcd_button.py
+# Fungsi      : Sistem amaran menggunakan LCD I2C, buzzer, butang dan LED amaran.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : LCD Grove JHD1802 I2C, buzzer onboard, push button, LED amaran
+# Pin Diguna  : LCD: SCL=GP3, SDA=GP2, addr=0x3E; Buzzer: GP22; Butang: GP20; LED: GP18
+# Tahap       : Sederhana
+# Nota        : LCD menggunakan I2C alamat 0x3E. Jika LED sebenar pada board berbeza, tukar pin LED mengikut wiring semasa.
+# =========================================================
+
 import board
 import busio
 import time

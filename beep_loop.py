@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : beep_loop.py
+# Fungsi      : Membunyikan buzzer sebanyak 3 kali secara berulang.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Buzzer onboard
+# Pin Diguna  : Buzzer: GP22
+# Tahap       : Asas
+# Nota        : Sesuai untuk latihan asas loop dan kawalan buzzer menggunakan pwmio.
+# =========================================================
+
 import board
 import pwmio
 import time

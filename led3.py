@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : led3.py
+# Fungsi      : Menghidup dan memadam dua LED secara berselang-seli.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : 2 LED digital
+# Pin Diguna  : LED0: GP0; LED1: GP1
+# Tahap       : Asas
+# Nota        : Sesuai untuk latihan asas corak nyalaan LED menggunakan loop dan delay.
+# =========================================================
+
 import board
 import digitalio
 import time

@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : av_car.py
+# Fungsi      : Simulasi kereta autonomi ringkas menggunakan motor DC, sensor ultrasonik dan LCD I2C.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Motor DC, sensor ultrasonik 1-pin, LCD Grove JHD1802 I2C
+# Pin Diguna  : Motor1: GP8 & GP9; Ultrasonik SIG: GP1; LCD: SCL=GP3, SDA=GP2, addr=0x3E
+# Tahap       : Lanjutan
+# Nota        : Memerlukan library adafruit_motor.motor dan modul pulseio. Sensor ultrasonik menggunakan satu pin SIG untuk trigger dan echo.
+# =========================================================
+
 import time
 import board
 import pwmio

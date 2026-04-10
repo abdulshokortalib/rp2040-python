@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : doraemon.py
+# Fungsi      : Memainkan lagu Doraemon menggunakan buzzer dan NeoPixel sebagai indikator.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Buzzer onboard, NeoPixel onboard
+# Pin Diguna  : Buzzer: GP22; NeoPixel: GP18
+# Tahap       : Sederhana
+# Nota        : Memerlukan modul neopixel_write. Warna NeoPixel mungkin perlu dilaras jika susunan warna board ialah GRB.
+# =========================================================
+
 # ============================================
 # CircuitPython Buzzer Melody with NeoPixel
 # For Maker Pi Pico / Maker Pi RP2040

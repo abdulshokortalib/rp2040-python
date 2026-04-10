@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : ambulan_motor.py
+# Fungsi      : Sistem amaran ambulans dengan kawalan motor, LCD I2C, dua butang, buzzer dan LED.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : LCD Grove JHD1802 I2C, buzzer onboard, 2 push button, Grove LED, motor DC
+# Pin Diguna  : LCD: SCL=GP1, SDA=GP0, addr=0x3E; Buzzer: GP22; Butang amaran: GP20; Butang stop: GP21; LED: GP5; Motor1: GP8 & GP9
+# Tahap       : Lanjutan
+# Nota        : Kod semasa menggunakan I2C pada GP1/GP0, berbeza daripada fail LCD lain yang biasa guna GP3/GP2. Jika LCD tidak berfungsi, semak wiring dan keserasian pin.
+# =========================================================
+
 import board
 import busio
 import time

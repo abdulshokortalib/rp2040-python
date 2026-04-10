@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : groveled1.py
+# Fungsi      : Menghidup dan memadam Grove LED secara berkelip.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Grove LED / LED digital
+# Pin Diguna  : LED: GP5
+# Tahap       : Asas
+# Nota        : Kod menggunakan while True. Baris komentar akhir “Write your code here :-)” tidak menjejaskan fungsi tetapi boleh dibuang untuk kemasan.
+# =========================================================
+
 import board
 import digitalio
 import time

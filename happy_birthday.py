@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : happy_birthday.py
+# Fungsi      : Memainkan lagu Happy Birthday menggunakan passive buzzer.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Buzzer onboard / passive buzzer
+# Pin Diguna  : Buzzer: GP22
+# Tahap       : Sederhana
+# Nota        : Komen asal menyebut GP2 tetapi kod sebenar menggunakan GP22. Menggunakan variable_frequency=True untuk not muzik.
+# =========================================================
+
 import time
 import board
 import pwmio

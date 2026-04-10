@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : grovebuzzer3.py
+# Fungsi      : Mengawal Grove buzzer dan LED secara serentak sebanyak 2 kali.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Grove buzzer, Grove LED / LED digital
+# Pin Diguna  : Buzzer: GP17; LED: GP5
+# Tahap       : Asas
+# Nota        : Menggunakan variable_frequency=True pada pwmio.PWMOut untuk buzzer.
+# =========================================================
+
 import board
 import pwmio
 import time

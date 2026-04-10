@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : buzzer2.py
+# Fungsi      : Mengawal buzzer dan LED secara serentak sebanyak 2 kali.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Buzzer onboard, LED digital
+# Pin Diguna  : Buzzer: GP22; LED: GP0
+# Tahap       : Asas
+# Nota        : Komen asal menyebut GP18 tetapi kod sebenar menggunakan GP22 untuk buzzer.
+# =========================================================
+
 import board
 import pwmio
 import time

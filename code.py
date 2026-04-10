@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : code.py
+# Fungsi      : Demo asal Cytron Maker Pi RP2040 untuk ujian LED, NeoPixel, buzzer, butang, servo dan motor DC.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : 13 LED onboard, 2 NeoPixel, buzzer onboard, 2 push button, 4 servo, 2 motor DC
+# Pin Diguna  : LED: GP0, GP1, GP2, GP3, GP4, GP5, GP6, GP7, GP16, GP17, GP26, GP27, GP28; NeoPixel: GP18; Buzzer: GP22; Button: GP20 & GP21; Servo: GP12, GP13, GP14, GP15; Motor1: GP8 & GP9; Motor2: GP10 & GP11
+# Tahap       : Lanjutan
+# Nota        : Memerlukan library neopixel, simpleio, pwmio, digitalio, adafruit_motor.servo dan adafruit_motor.motor. Ini ialah demo kilang Cytron.
+# =========================================================
+
 # *************************************************
 # Out-of-the-box Demo for Cytron Maker Pi RP2040
 # 

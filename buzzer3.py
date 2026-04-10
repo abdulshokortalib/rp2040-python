@@ -1,3 +1,14 @@
+# =========================================================
+# Nama Fail   : buzzer3.py
+# Fungsi      : Memainkan melodi ringkas Do-Re-Mi-Fa-So pada buzzer.
+# Papan       : Maker Pi RP2040
+# Bahasa      : CircuitPython
+# Komponen    : Buzzer onboard
+# Pin Diguna  : Buzzer: GP22
+# Tahap       : Asas
+# Nota        : Memerlukan pwmio dengan variable_frequency=True untuk menukar frekuensi not.
+# =========================================================
+
 import board
 import pwmio
 import time
