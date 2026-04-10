@@ -1,95 +1,219 @@
 # rp2040-python
 
-Repositori ini menghimpunkan koleksi kod Python untuk menguji dan mempelajari penggunaan papan pengawal **Maker Pi RP2040**.  
-Kandungan repo ini sesuai dijadikan bahan latihan kendiri untuk pemula yang ingin memahami asas kawalan komponen elektronik menggunakan Python.
+Repositori ini menghimpunkan koleksi contoh kod **CircuitPython** untuk papan **Maker Pi RP2040**.  
+Kandungan repo ini sesuai untuk pembelajaran kendiri, demonstrasi pengajaran TVET, dan ujian asas komponen elektronik seperti LED, buzzer, LCD, motor, butang, dan sensor ultrasonik.
 
-## Kandungan Utama
+## Objektif Repositori
 
-Repositori ini mengandungi contoh kod berkaitan:
+Repo ini dibangunkan untuk membantu pengguna:
 
-- **LED**  
-  Contoh fail: `led1.py`, `led2.py`, `led3.py`, `led4.py`, `led5.py`, `groveled1.py`
+- memahami asas penggunaan Maker Pi RP2040
+- mempelajari kawalan input dan output menggunakan CircuitPython
+- menguji komponen secara langkah demi langkah
+- membina projek mini berasaskan sensor dan aktuator
+- menggunakan contoh kod sedia ada sebagai asas untuk projek sendiri
 
-- **Buzzer / Bunyi**  
-  Contoh fail: `beep.py`, `beep_loop.py`, `buzzer1.py`, `buzzer2.py`, `buzzer3.py`, `buzzer_continue.py`, `grovebuzzer3.py`, `siren.py`, `happy_birthday.py`, `doraemon.py`
+## Platform dan Keperluan Asas
 
-- **Motor**  
-  Contoh fail: `motor1.py`, `motor2.py`, `motor3.py`, `motor4.py`, `motor5.py`, `ambulan_motor.py`
+Sebelum menggunakan fail dalam repo ini, pastikan perkara berikut tersedia:
 
-- **LCD dan Butang**  
-  Contoh fail: `lcd_button.py`, `test_lcd.py`, `lagu_button.py`
+- papan **Maker Pi RP2040**
+- firmware **CircuitPython**
+- editor seperti **Thonny**
+- sambungan komponen yang betul
+- library tambahan bagi fail tertentu seperti:
+  - `adafruit_motor`
+  - `neopixel`
+  - `neopixel_write`
 
-- **Sensor Ultrasonik**  
-  Contoh fail: `us1.py`, `us2.py`, `us3.py`, `us4.py`
+## Struktur Kandungan Repo
 
-- **Projek Mini / Simulasi**  
-  Contoh fail: `ambulan.py`, `av_car.py`, `code.py`
+Kandungan repo ini boleh dibahagikan kepada beberapa kumpulan utama:
 
-## Tujuan Repo
+### 1. LED Asas
+Fail:
+- `led1.py`
+- `led2.py`
+- `led3.py`
+- `led4.py`
+- `led5.py`
+- `groveled1.py`
 
-Repo ini dibangunkan untuk:
+Topik:
+- LED hidup dan padam
+- dua LED serentak
+- dua LED berselang-seli
+- kawalan LED menggunakan butang
+- toggle LED
+- penggunaan Grove LED
 
-1. Membantu pengguna mempelajari asas penggunaan Maker Pi RP2040
-2. Memberi contoh kod Python yang mudah diuji dan diubah suai
-3. Menjadi rujukan bagi projek pendidikan, TVET, dan eksperimen asas automasi
+### 2. Buzzer dan Audio
+Fail:
+- `beep.py`
+- `beep_loop.py`
+- `buzzer2.py`
+- `buzzer3.py`
+- `buzzer_continue.py`
+- `grovebuzzer3.py`
+- `siren.py`
+- `happy_birthday.py`
+- `doraemon.py`
+- `lagu_button.py`
 
-## Keperluan Asas
+Topik:
+- buzzer sekali bunyi
+- buzzer berulang
+- bunyi siren
+- melodi asas
+- pemain lagu menggunakan butang
 
-Sebelum menggunakan kod dalam repo ini, pastikan:
+### 3. Motor DC
+Fail:
+- `motor1.py`
+- `motor2.py`
+- `motor3.py`
+- `motor4.py`
+- `motor5.py`
 
-- Menggunakan papan **Maker Pi RP2040**
-- Sudah memasang firmware Python yang sesuai pada papan
-- Menyambungkan komponen seperti LED, buzzer, motor, LCD, atau sensor dengan betul
-- Menggunakan editor seperti **Thonny** atau editor lain yang menyokong pemindahan fail ke papan RP2040
+Topik:
+- gerakan motor ke hadapan
+- forward dan reverse
+- kawalan kelajuan
+- butang sebagai kawalan motor
+- toggle motor on/off
 
-## Cara Guna
+### 4. LCD dan Paparan
+Fail:
+- `test_lcd.py`
+- `lcd_button.py`
+- `ambulan.py`
+- `av_car.py`
+- `us2.py`
+- `us4.py`
 
-1. Muat turun atau klon repositori ini
-2. Buka fail Python yang ingin diuji
-3. Semak sambungan pin dan komponen yang digunakan
-4. Muat naik fail ke papan RP2040
-5. Jalankan fail dan perhatikan tindak balas komponen
+Topik:
+- ujian paparan LCD I2C
+- paparan mesej sistem
+- integrasi LCD dengan butang, sensor, atau motor
+
+### 5. Ultrasonik
+Fail:
+- `us2.py`
+- `us3.py`
+- `us4.py`
+- `av_car.py`
+
+Topik:
+- bacaan jarak
+- paparan jarak pada LCD
+- kawalan motor berdasarkan jarak
+- asas logik kereta autonomi
+
+### 6. Projek Mini
+Fail:
+- `ambulan.py`
+- `ambulan_motor.py`
+- `av_car.py`
+- `code.py`
+
+Topik:
+- sistem amaran
+- siren dan LED kecemasan
+- simulasi motor dan amaran
+- prototaip kereta autonomi ringkas
+- demo asal papan Maker Pi RP2040
+
+## Jadual Ringkas Pin
+
+> **Nota penting:** sesetengah fail menggunakan pin yang berbeza walaupun fungsi hampir sama. Semak kod sebelum sambungan dibuat.
+
+| Fail | Fungsi | Pin Utama |
+|---|---|---|
+| `led1.py` | LED blink | GP0 |
+| `led2.py` | 2 LED serentak | GP0, GP1 |
+| `led3.py` | 2 LED berselang-seli | GP0, GP1 |
+| `led4.py` | Button kawal LED | GP0, GP20 |
+| `led5.py` | Toggle LED | GP0, GP20 |
+| `groveled1.py` | Grove LED | GP5 |
+| `beep.py` | Beep sekali | GP22 |
+| `beep_loop.py` | Beep 3 kali | GP22 |
+| `buzzer2.py` | Buzzer + LED | GP22, GP0 |
+| `buzzer3.py` | Melodi ringkas | GP22 |
+| `buzzer_continue.py` | Buzzer berterusan | GP22 |
+| `grovebuzzer3.py` | Grove buzzer + LED | GP17, GP5 |
+| `siren.py` | Siren | GP22 |
+| `happy_birthday.py` | Lagu Happy Birthday | GP22 |
+| `doraemon.py` | Lagu Doraemon + NeoPixel | GP22, GP18 |
+| `lagu_button.py` | Pemilih lagu | GP20, GP21, GP22, GP18 |
+| `motor1.py` | Motor forward | GP8, GP9 |
+| `motor2.py` | Motor forward/reverse | GP8, GP9 |
+| `motor3.py` | Motor ramp speed | GP8, GP9 |
+| `motor4.py` | Button kawal motor | GP8, GP9, GP20 |
+| `motor5.py` | Toggle motor | GP8, GP9, GP20 |
+| `test_lcd.py` | LCD I2C test | GP3=SCL, GP2=SDA |
+| `lcd_button.py` | LCD + buzzer + button + LED | GP3, GP2, GP22, GP20, GP18 |
+| `us2.py` | Ultrasonic + LCD | GP1, GP3, GP2 |
+| `us3.py` | Ultrasonic + motor | GP1, GP8, GP9 |
+| `us4.py` | Ultrasonic + LCD + motor | GP1, GP3, GP2, GP8, GP9 |
+| `ambulan.py` | LCD + buzzer + button + LED | GP3, GP2, GP22, GP20, GP5 |
+| `ambulan_motor.py` | LCD + buzzer + 2 butang + LED + motor | GP1, GP0, GP22, GP20, GP21, GP5, GP8, GP9 |
+| `av_car.py` | Motor + ultrasonic + LCD | GP8, GP9, GP1, GP3, GP2 |
+
+## Fail Yang Perlu Diperhatikan
+
+Beberapa fail dalam repo ini masih memerlukan penjelasan atau penamaan semula supaya lebih jelas:
+
+- `buzzer1.py` kini lebih menyerupai contoh LED, bukan buzzer
+- `us1.py` kini lebih menyerupai contoh LED blink, bukan ultrasonic
+- `ambulan_motor.py` menggunakan konfigurasi LCD yang berbeza daripada fail LCD lain
+
+Disyorkan supaya fail-fail ini sama ada:
+- dikemas kini kandungannya supaya sepadan dengan nama fail, atau
+- dinamakan semula supaya sepadan dengan fungsi sebenar
 
 ## Cadangan Urutan Pembelajaran
 
-Bagi pemula, dicadangkan belajar mengikut urutan berikut:
+Untuk pengguna baharu, urutan ini lebih sesuai:
 
-1. LED
-2. Buzzer
-3. Butang
-4. LCD
-5. Sensor ultrasonik
-6. Motor
-7. Projek mini seperti ambulans dan kereta autonomi
+1. `led1.py`
+2. `led2.py`
+3. `led3.py`
+4. `led4.py`
+5. `led5.py`
+6. `beep.py`
+7. `beep_loop.py`
+8. `buzzer3.py`
+9. `test_lcd.py`
+10. `motor1.py`
+11. `motor2.py`
+12. `motor3.py`
+13. `us2.py`
+14. `us3.py`
+15. `us4.py`
+16. `ambulan.py`
+17. `av_car.py`
 
-## Senarai Fail Contoh
+## Cara Guna
 
-Beberapa fail utama dalam repo ini ialah:
+1. Pasang CircuitPython pada papan Maker Pi RP2040.
+2. Sambungkan papan ke komputer.
+3. Buka fail yang ingin diuji menggunakan Thonny.
+4. Semak pin dan komponen yang digunakan.
+5. Simpan fail ke papan sebagai `code.py` jika mahu ia berjalan automatik.
+6. Uji fungsi dan perhatikan tindak balas komponen.
 
-- `led1.py`
-- `beep.py`
-- `buzzer1.py`
-- `motor1.py`
-- `lcd_button.py`
-- `test_lcd.py`
-- `us1.py`
-- `ambulan.py`
-- `av_car.py`
+## Cadangan Penambahbaikan Repo
 
-## Kesesuaian Pengguna
+Untuk menjadikan repo ini lebih mantap dan mesra pengguna, cadangan berikut sangat digalakkan:
 
-Repo ini sesuai untuk:
-
-- Pelajar TVET
-- Pengajar yang ingin menunjukkan demo asas RP2040
-- Pemula yang baru belajar Python dan mikropengawal
-- Pengguna yang ingin membina projek mini berasaskan sensor dan aktuator
-
-## Nota
-
-Setiap fail di dalam repo ini mungkin menggunakan sambungan komponen dan konfigurasi pin yang berbeza.  
-Sebelum menjalankan kod, semak dahulu struktur kod dan pastikan sambungan perkakasan adalah betul.
+- tambah komen header standard pada semua fail
+- tambah gambar sambungan litar
+- asingkan fail mengikut folder seperti `led/`, `buzzer/`, `motor/`, `lcd/`, `ultrasonic/`, `project/`
+- tukar nama fail yang mengelirukan
+- tambah `requirements.md` atau `libraries.md`
+- tambah tahap kesukaran pada setiap fail
+- tambah rajah pin Maker Pi RP2040
 
 ## Penutup
 
-Semoga repo ini membantu dalam pembelajaran asas pengaturcaraan Python untuk RP2040 dan memberi idea untuk membangunkan projek yang lebih menarik pada masa hadapan.
+Semoga repo ini membantu pelajar, pengajar, dan pemula memahami penggunaan Maker Pi RP2040 dengan lebih mudah, tersusun, dan praktikal. Repositori ini juga boleh dijadikan asas untuk menghasilkan modul latihan TVET, eksperimen mikropengawal, dan projek mini berasaskan CircuitPython.
